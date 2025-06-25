@@ -39,7 +39,7 @@ function SignUp() {
             
         }else{
 
-        axios.post("http://localhost:1459/api/user/signup", formData)
+        axios.post("https://my-backend.onrender.com/api/user/signup", formData)
       .then((resp) => {
         if (resp.status === 200 || resp.status === 201)  {
             toast("Account Created Sucessfully",{
