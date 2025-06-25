@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import "./SignUp.css"
-
 import axios from "axios"
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
@@ -22,8 +21,6 @@ function SignUp() {
  
     const getNewUser = (e) => {
         e.preventDefault()
-
-
         if (
             !formData.firstName ||
             !formData.lastName ||
@@ -40,7 +37,6 @@ function SignUp() {
             });
             
         }else{
-
         axios.post(`${API}/api/user/signup`, formData)
       .then((resp) => {
         if (resp.status === 200 || resp.status === 201)  {
