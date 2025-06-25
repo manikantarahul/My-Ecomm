@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import "./SignUp.css"
+
 import axios from "axios"
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+const API=import.meta.env.VITE_BACKEND_URL;
 function SignUp() {
     const [error, setError] = useState(false);
     const [formData, setFormData] = useState({
@@ -39,7 +41,7 @@ function SignUp() {
             
         }else{
 
-        axios.post("https://my-ecomm.onrender.com/api/user/signup", formData)
+        axios.post(`${API}/api/user/signup`, formData)
       .then((resp) => {
         if (resp.status === 200 || resp.status === 201)  {
             toast("Account Created Sucessfully",{

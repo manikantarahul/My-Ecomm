@@ -3,6 +3,8 @@ import "./SignIn.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast"
+const API=import.meta.env.VITE_BACKEND_URL;
+
 const SignIn = () => {
   const navigate = useNavigate()
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -17,7 +19,7 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://my-ecomm.onrender.com/api/user/signin", { email, password }).then((resp) => {
+    axios.post(`${API}/api/user/signin`, { email, password }).then((resp) => {
       if (resp.data.ok) {
         toast("Login successful", {
           style: {

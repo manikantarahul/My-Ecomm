@@ -8,6 +8,9 @@ app.use(cors())
 app.use(express.json())
 
 app.use("/api/user",userroute)
+app.get('/', (req, res) => {
+    res.send('Hello from backend');
+  });
 app.listen(port,()=>{
     console.log("server started")
 })
