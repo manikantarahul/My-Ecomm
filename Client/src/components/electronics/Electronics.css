@@ -1,0 +1,12 @@
+.adElectronics{
+    width: 1400px;
+    height: 270px;
+    background-color: lightgreen;
+    box-shadow: 0 0 10px cyan;
+    margin: 50px auto;
+}
+.electronicsDataContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
