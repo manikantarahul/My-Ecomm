@@ -28,10 +28,10 @@ function App(){
      <Route path={"/"} element={<SignIn/>}/>
      
         <Route path="/home" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
-     <Route path="/electronics" element={<ProtectedRoute><Electronics/></ProtectedRoute>}/>
-     <Route path="/jewelery" element={<ProtectedRoute><Jewelery/></ProtectedRoute>}/>
-     <Route path="/mens" element={<ProtectedRoute><Mens/></ProtectedRoute>}/>
-     <Route path="/womens" element={<ProtectedRoute><Womens/></ProtectedRoute>}/>
+     <Route path="/electronics" element={<ProtectedRoute><Electronics url="https://your-json-server.onrender.com/electronics"/></ProtectedRoute>}/>
+     <Route path="/jewelery" element={<ProtectedRoute><Jewelery  url="https://your-json-server.onrender.com/jewelery" /></ProtectedRoute>}/>
+     <Route path="/mens" element={<ProtectedRoute><Mens url="https://your-json-server.onrender.com/mensclothing"/></ProtectedRoute>}/>
+     <Route path="/womens" element={<ProtectedRoute><Womens url="https://your-json-server.onrender.com/womensclothing"/></ProtectedRoute>}/>
     
      <Route path='/signup' element={<SignUp/>} />
     <Route path='/signin' element={<SignIn/>}/>
