@@ -12,7 +12,7 @@ function Nav() {
                 <h1>My-Ecomm</h1>
             </section>
             <section id="links" class="myflex">
-                <Link to="/">🏠Home</Link>
+                <Link to="/home">🏠Home</Link>
                 <Link to="/mens">👕Mens</Link>
                 <Link to="/womens">👗Womens</Link>
                 <Link to="/electronics">📱Electronics</Link>
