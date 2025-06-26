@@ -23,7 +23,7 @@ function ProductDetails() {
   
     var { id } = useParams()
     useEffect(() => {
-        axios.get(`http://localhost:3000/products/${id}`).then((res) => {
+        axios.get(`https://json-products.onrender.com/products/${id}`).then((res) => {
             setProduct(res.data)
         }).catch((error) => {
             alert("something went wrong")
