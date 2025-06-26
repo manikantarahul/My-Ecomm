@@ -3,7 +3,7 @@ import Products from '../products/Products'
 function Jewelery() {
   return (
     <div>
-        <Products url="https://your-json-service.onrender.com/jewelery" />
+        <Products url="https://json-products.onrender.com/jewelery" />
     </div>
   )
 }

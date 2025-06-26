@@ -8,7 +8,7 @@ function Electronics() {
     
   return (
     <div className='electronics'>
-        <Products url={"https://your-json-service.onrender.com/electronics"}/>
+        <Products url={"https://json-products.onrender.com/electronics"}/>
     </div>
   )
 }
